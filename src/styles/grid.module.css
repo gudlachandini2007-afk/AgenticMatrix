@@ -1,0 +1,90 @@
+/* CSS Module for Responsive Dashboard Grid Layouts */
+
+.dashboardGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .dashboardGrid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+.colSpan12 {
+  grid-column: span 1 / span 1;
+}
+
+@media (min-width: 1024px) {
+  .colSpan12 {
+    grid-column: span 12 / span 12;
+  }
+  .colSpan7 {
+    grid-column: span 7 / span 7;
+  }
+  .colSpan5 {
+    grid-column: span 5 / span 5;
+  }
+  .colSpan6 {
+    grid-column: span 6 / span 6;
+  }
+  .colSpan4 {
+    grid-column: span 4 / span 4;
+  }
+  .colSpan8 {
+    grid-column: span 8 / span 8;
+  }
+}
+
+.splitGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .splitGrid {
+    grid-template-columns: 1.1fr 1fr;
+  }
+}
+
+@media (min-width: 1280px) {
+  .splitGrid {
+    grid-template-columns: 1.15fr 1fr;
+  }
+}
+
+.threeColumnGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .threeColumnGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .threeColumnGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cardContainer {
+  background-color: #14151a;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 0.875rem;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.cardContainer:hover {
+  border-color: rgba(255, 255, 255, 0.13);
+}

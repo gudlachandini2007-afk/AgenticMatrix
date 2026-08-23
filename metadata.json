@@ -1,0 +1,6 @@
+{
+  "name": "Multi-AI Agent Dashboard",
+  "description": "A sophisticated dark-mode multi-agent AI dashboard featuring Business & Executive, Finance & Student, Smart Agriculture, and E-Commerce & Retail hubs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
